@@ -28,7 +28,9 @@ body {
 
 }
 
-
+img {
+    width: 100%;
+}
 
 
 /* 
@@ -204,6 +206,8 @@ body {
  .titulo_tex{
      text-align: center;
      background-color: var(--violeta);
+     margin-top: 10px;
+     margin-bottom: 10px;
  }
 .curriculum{
     display:flex;
@@ -240,15 +244,29 @@ body {
 .informacion {
     background-color: var(--violeta);
     padding: 32px;
-    display: grid;
-    grid-template-columns: 500px 500px;
-    /* Esto separa cada casillero de la grilla "gap" */
-    gap: 24px; */
+    
 
 }
- 
+.blog_noti {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Esto separa cada casillero de la grilla "gap" */
+    gap: 25px; 
+    align-items: center;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+
+.hablemos_com {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Esto separa cada casillero de la grilla "gap" */
+    gap: 25px; 
+}
 
 .noticia_img {
-    width: 475px;
+    max-width: 375px;
     text-align: center;
 }
