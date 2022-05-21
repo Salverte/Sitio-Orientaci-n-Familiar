@@ -1,0 +1,254 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --durazno: #ddb68d;
+    --negro: #000;
+    --morado: #dcd3ff;
+    --violeta:#8c52ff;
+    --blanco:#fff;
+}
+body {
+    /* background-image necesita la ruta de la imagen de manera que se repite
+    automaticamente en todo el sitio
+    si quiero que no se repita uso background-repeat
+    - no-repeat: no se repite.
+    - repeat-x: eje x solamente
+    - repeat-y: eje y solamente
+    Para que abarque todo el fondo del sitio:
+    backgroundo-size: cover */
+    background-image: url("imagenes/fondo.png");
+    /* Para usar la variable se la palabra magica "var" y entre() la variable con-- */
+    background-color: var(--blanco);
+    /* Este font-family se aplica a toda la página */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+
+
+/* 
+             ----------------CABECERA-----------
+*/
+.cabecera,
+.contenido {
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.cabecera {
+    background-color: var(--blanco);
+    text-align: center;
+        /* display: flex;
+        justify-content:space-between;
+        align-items: center; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+.cabecera-titulo {
+    color: var(--negro);
+}
+.logo {
+    max-width: 200px;
+}
+
+
+/* 
+             ----------------CONTENIDO-----------
+*/
+
+.contenido {
+    background-color: var(--morado);
+}
+
+/* ----------NAVEGACIÓN-------------- */
+ .nav {
+        background-color: var(--morado);
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 16px;
+        padding-left: 40px;
+        /* Creo la navegación entre nav y slider con un margen que empuja abajo. */
+        margin-bottom: 40px;
+    }
+ .nav-lista {
+    display:flex;
+    flex-grow: 1;
+    list-style: none;
+ }
+ 
+
+ .nav-lista_item-link {
+    /* background-color: orange; */
+    border-right: 1px solid var(--blanco);
+    display: block;
+    color: var(--negro) ;
+    text-decoration: none;
+    font-weight:bolder;
+    padding: 5px 12px;
+ }
+ .nav-lista_item-link:hover{
+     background-color: var(--violeta); 
+ 
+ }
+ .nav-form {
+    display: flex;
+    color: black ;
+    text-decoration: none;
+    padding: 10px;
+ }
+
+
+
+ 
+
+ /* ------------- PRINCIPAL------------------ */
+ .productos{
+     background-color: var(--morado);
+     justify-content: space-between;
+     align-items: center;
+     display: grid;
+     grid-template-columns: 500px 400px;
+     gap: 24px
+    
+ }
+/* ---------------SLIDER---------------- */
+
+.slider {
+    /* esto centra la imagen */
+   text-align: center;
+   margin-bottom: 40px;
+   margin-left: 20px;
+}
+.slider-img{
+   max-width: 600px;
+}
+ 
+/*----------------------------- INFO----------------------------------- */
+ .info {
+     max-width: 500px;
+     text-align: end;
+     background-color: var(--durazno);
+     padding: 32px;
+     margin-right: 20px;
+     list-style: none;
+     
+     /* display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 24px; */
+ }
+ .info-lista {
+    list-style: none;
+    
+ }
+ .info-lista_item-link {
+        color: var(--negro) ;
+        list-style: none;
+        text-decoration: none;
+        
+ }
+ 
+ .info-lista_item-link:hover {
+     background-color: var(--violeta);
+ }
+
+/* .conocenos{
+    display: flex;
+    justify-content:left;
+}
+.conocenos-img{
+    width: 200px;
+    margin-left: 100px;
+    margin-right: 100px; 
+}*/
+
+.redes{
+    background-color: var(--blanco);
+    margin-bottom: 400px;
+    margin-top: 50px;
+    
+    padding: 8px 32px;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.redes-info{
+    background-color: var(--blanco); 
+}
+
+.redes-img{
+    max-width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* ------------------------QUIENES SOMOS----------------------- */
+
+.descripcion{
+    margin:20px;
+    text-align: justify;
+ }
+ .titulo_tex{
+     text-align: center;
+     background-color: var(--violeta);
+ }
+.curriculum{
+    display:flex;
+    justify-content: center;
+
+}
+.conocenos{
+    text-align: center;
+    width: 300px;
+    margin:20px;
+
+    animation-name: rotar;
+    animation-play-state: paused;
+    animation-duration: 4s;
+}
+
+.conocenos:hover{
+    animation-play-state: running; 
+}
+
+@keyframes rotar {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.cvnerina{
+    text-align: center;
+}
+
+
+/*--------------------------------------------BLOG----------------------------------------- */
+
+.informacion {
+    background-color: var(--violeta);
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    /* Esto separa cada casillero de la grilla "gap" */
+    gap: 24px; */
+
+}
+ 
+
+.noticia_img {
+    width: 475px;
+    text-align: center;
+}

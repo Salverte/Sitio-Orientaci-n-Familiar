@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio Web</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <div class="cabecera"> 
+        <a href="index.html">
+            <img class="logo" src="imagenes/Logoo.png" alt="Ir al Inicio">
+        </a>
+        <h1 class="cabecera-titulo">Lic.Nerina Rizzo</h1>
+        <h2 class="cabecera-titulo">- Consultoria y Orientación familiar -</h1>
+    </div> <!-- Aca cierra cabecera -->
+
+    <!-- ---------------------CONTENIDO----------------------------->
+
+    <div class="contenido">
+        <!---------------------- NAVEGACIÓN ---------------------->
+
+        <nav class="nav">
+            <ul class="nav-lista">
+                <li class="nav-lista-item">
+                    <a href="index.html" class="nav-lista_item-link">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-lista-item">
+                    <a href="quienes_somos.html" class="nav-lista_item-link">
+                        Quiénes somos
+                    </a>
+                </li>
+                <li class="nav-lista-item">
+                    <a href="blog.html" class="nav-lista_item-link">
+                        Blog
+                    </a>
+                </li>
+                <li class="nav-lista-item">
+                    <a href="index.html" class="nav-lista_item-link">
+                        Talleres
+                    </a>
+                </li>
+                <li class="nav-lista-item">
+                    <a href="index.html" class="nav-lista_item-link">
+                        Consultoria
+                    </a>
+                </li>
+                <li class="nav-lista-item">
+                    <a href="index.html" class="nav-lista_item-link">
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+            <form action="buscar.js" class="nav-form">
+                <!-- Ojo que acá hay un issue de accesibilidad, más adelante vemos cómo arreglarlo -->
+                <input type="text" placeholder="Buscar en el sitio">
+                <input type="submit" value="Buscar">
+            </form>
+        </nav>
+<!-- --------------------PRODUCTOS E INFORMACIÓN------------------->
+<div class="productos">
+    <div class="slider">
+        <img class="slider-img" src="imagenes/slider.png" alt="Esto es un slider">
+    </div>  
+
+    <div class="info">
+        <h2>INFORMACIÓN</h2>
+        <br>
+        <ul class="info-lista">
+            <li class="info-lista-item">
+                <a href="blog.html" class="info-lista_item-link">
+                    ¿Qué es la Orientación Familiar?
+                </a>
+            </li>
+            <br>
+            <li class="info-lista-item">
+                <a href="blog.html" class="info-lista_item-link">
+                    Hablemos de comunicación
+                </a>
+            <!-- </li>
+            <li class="info-lista-item">
+                <a href="blog.html" class="info-lista_item-link">
+                    Alimentación
+                </a>
+            </li> -->
+            
+        </ul>
+    </div>
+</div>
+
+    <!-- Aca cierra PRODUCTOS E INFORMACIÓN -->
+
+        
+                    <!-- -----REDES----- -->
+
+        <div class="redes">
+            
+            <div class="redes-info">
+                <h3>Seguinos en nuestras redes y contactanos</h3>
+                </div>
+                
+                <a href="facebook">
+                <img src="imagenes/facebook.png" alt="facebook" class="redes-img">
+                </a>
+                
+                <a href="instagram">
+                <img src="imagenes/instagram.png" alt="Instagram" class="redes-img">
+                </a>
+                
+                <a href="whatsapp">
+                <img src="imagenes/whatsapp.png" alt="whatsapp" class="redes-img">
+                </a>
+            </div>
+
+        </div>
+
+
+    </div> 
+    <!-- Aca cierra contenido -->
+</body>
+</html>
