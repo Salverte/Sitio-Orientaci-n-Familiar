@@ -283,20 +283,6 @@ img {
 /* ---------RESPONSIVE---------------- */
 
 @media (max-width: 1200px) {
-    .nav{
-    display: block;
-}
-    .nav-lista{
-        display: block;
-
-    }
-    .nav-lista_item-link{
-        border: 1px solid var(--durazno);
-        
-    }
-    .nav-form{
-        justify-content: center;
-    }
 
     .productos{
         display: block;
@@ -318,9 +304,23 @@ img {
        
     }
     
+}
+
+
+@media (max-width: 767px) {
+    .nav{
+       display: block;
+        }
+       .nav-lista{
+           display: block;
+       }
+       .nav-lista_item-link{
+           border: 1px solid var(--blanco);
+       }
+       .nav-form{
+           justify-content: center;
+        }
     .blog_noti{
         display: block;
+        }
     }
-
-
-}
