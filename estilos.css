@@ -270,3 +270,57 @@ img {
     max-width: 375px;
     text-align: center;
 }
+
+/* ---------------------------TALLERES-------------------------------- */
+
+.talleres{
+    text-align: center;
+}
+.talleres_img{
+    max-width: 700px;
+}
+
+/* ---------RESPONSIVE---------------- */
+
+@media (max-width: 1200px) {
+    .nav{
+    display: block;
+}
+    .nav-lista{
+        display: block;
+
+    }
+    .nav-lista_item-link{
+        border: 1px solid var(--durazno);
+        
+    }
+    .nav-form{
+        justify-content: center;
+    }
+
+    .productos{
+        display: block;
+    }
+    .slider{
+        max-width: 100%;
+        justify-content: center;
+        /* background-color: var(--durazno); */
+        padding: 32px;
+        margin:auto;
+        
+    }
+    .info{
+        max-width: 100%;
+        text-align: center;
+        background-color: var(--durazno);
+        padding: 32px;
+        margin:auto
+       
+    }
+    
+    .blog_noti{
+        display: block;
+    }
+
+
+}

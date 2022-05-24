@@ -54,7 +54,6 @@
                             Contacto
                         </a>
                     </li> -->
-                    </li>
                 </ul>
                 <form action="buscar.js" class="nav-form">
                     <!-- Ojo que acá hay un issue de accesibilidad, más adelante vemos cómo arreglarlo -->
@@ -63,24 +62,29 @@
                 </form>
             </nav>
             <div class="descripcion">
-                <h3 class="titulo_tex">Quiénes somos</h3>
-                <br>
-                <p>
-                    La crianza es una tarea que en muchos momentos presenta dudas a quienes participan de ella,
-                    al momento de resolver situaciones de la vida cotidiana u otras que suceden en un momento determinado.
-                    Muchas veces éstas generan angustia para la familia. Mi objetivo principal
-                    es dar el servicio de talleres y consultoría sobre temáticas específicas a las familias que lo 
-                    requieran.
+                <h3 class="titulo_tex">Consultoria</h3>
 
-                </p>
-                <br>
+                <form action="enviar.js">
+                    <label>
+                        Nombre:
+                        <input type="text" maxlength="30" required>
+                    </label> <br>
+            
+                    <label>
+                        Email:
+                        <input type="email">
+                    </label><br>
+                    
+                    <label>
+                        Comentarios:<br>
+                        <textarea></textarea>
+                    </label><br>
+                    <input type="reset" value="BORRAR">
+                    <input type="submit" value="ENVIAR">
             </div>
-            <div class="curriculum">
-                <a href="cv_nerina.pdf">
-                <img class="conocenos" src="imagenes/conoceneri.png" alt="Ir al curriculum de Nerina">
-            </a>
-                      
-            </div>
+                
+
+
                            <!-- -----REDES----- -->
 
         <div class="redes">
